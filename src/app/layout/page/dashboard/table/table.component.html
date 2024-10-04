@@ -1,0 +1,19 @@
+<p-table [value]="users" [paginator]="true" [rows]="10" [resizableColumns]="true" class="p-datatable-gridlines">
+    <ng-template pTemplate="header">
+      <tr>
+        <th pResizableColumn>Id</th>
+        <th pResizableColumn>Name</th>
+        <th pResizableColumn>Email</th>
+        <th pResizableColumn>Role</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-user>
+      <tr>
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.role }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+  
